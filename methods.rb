@@ -32,8 +32,7 @@ def quote_menu(jobs_arr, job_name = '')
                 quote.text_quote
                 print "*"
                 quote.email_quote
-                puts "*"
-                #quote.delete_quote # deletes quote from local 
+                puts "*" 
                 puts "Quote sent" 
                 puts "Press Enter for main menu"
                 gets              
@@ -90,7 +89,7 @@ def edit_job(jobs_arr)
     jobs_arr.each do |job| # check list for correct job
         if job.has_value?(job_name)
             # edit job
-            puts "What would you like to  ,, hours"
+            puts "What would you like to hours"
             puts "Press 1 to edit name"
             puts "Press 2 to edit materials cost"
             puts "Press 3 to edit how long the job will take (hrs)"

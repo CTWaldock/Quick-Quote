@@ -39,7 +39,9 @@ class Quote
       puts @quote_1
     end
 
+
     # emails quote to client
+
     def email_quote
       g = GmailSender.new("quickquoteruby@gmail.com", "HelloWorld123")
       # you can attach any number of files, but there are limits for total attachments size
@@ -56,7 +58,7 @@ class Quote
     Best wishes,
     The Quick Quote team!")
       rescue
-        puts "No internet: Email can be sent"
+        puts "No internet: Email can't be sent"
         #save your quoute to desktop
       end
   end
